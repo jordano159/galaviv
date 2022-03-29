@@ -1,0 +1,9 @@
+<nav>
+    <ul role="list">
+        <li><%= link_to 'דף הבית',root_path, class: "#{"active" if action_name == "home"}" %> </li>
+        <li><%= link_to 'אישור הגעה', arrival_path, class: "#{"active" if action_name == "arrival"}" %></li>
+        <li><%= link_to 'תפריט', menu_path, class: "#{"active" if action_name == "menu"}" %></li>
+        <li><%= link_to 'מהי חתונה חברתית', social_wedding_path, class: "#{"active" if action_name == "social_wedding"}" %></li>
+        <li><%= link_to 'מיקום', location_path, class: "#{"active" if action_name == "location"}" %></li>
+    </ul>
+</nav>

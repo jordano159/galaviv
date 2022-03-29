@@ -1,0 +1,22 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Guests</h1>
+
+<div id="guests">
+<table>
+  <thead>
+    <th>שם האורח.ת</th>
+    <th>מגיע.ה?</th>
+    <th>כמה מגיעים?</th>
+    <th>מי מגיע?</th>
+  </thead>
+  <tbody>
+    <% @guests.each do |guest| %>
+      <%= render guest %>
+    <% end %>
+  </tbody>
+</table>
+ 
+</div>
+
+<%= link_to "New guest", new_guest_path %>

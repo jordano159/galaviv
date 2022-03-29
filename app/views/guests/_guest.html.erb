@@ -1,0 +1,18 @@
+<tr id="<%= dom_id guest %>">
+  <td>
+    <%= guest.name %>
+  </td>
+   <td>
+    <% if guest.status == "coming" %>
+      מגיע
+    <% else %>
+      לא מגיע
+    <% end %>
+  </td>
+   <td>
+    <%= guest.amount %>
+  </td>
+   <td>
+    <%= guest.people %>
+  </td>
+</tr>

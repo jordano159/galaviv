@@ -1,0 +1,41 @@
+* {
+	font-family: "Assistant", sans-serif;
+}
+main {
+	width: 60%;
+	margin: 2rem auto;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:visited {
+	color: black;
+}
+
+a.active {
+	font-weight: bold;
+	font-size: 1.1rem;
+}
+.foods {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+.category {
+	width: 30%;
+}
+.food {
+	border: 1px solid;
+	border-bottom: none;
+	padding-inline: 1rem;
+	width: 100%;
+}
+.food:last-child {
+	border-bottom: 1px solid;
+}
+.food .title {
+	border-bottom: 1px solid;
+}

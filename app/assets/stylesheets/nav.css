@@ -1,0 +1,13 @@
+nav ul {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+nav ul li a {
+	border-left: 1px solid;
+	padding: 1rem 2rem;
+}
+
+nav ul li:last-child a {
+	border-left: none;
+}

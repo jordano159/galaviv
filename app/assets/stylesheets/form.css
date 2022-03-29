@@ -1,0 +1,22 @@
+.input {
+	display: inline-block;
+	width: 30%;
+}
+.input label {
+	width: 100%;
+	display: block;
+}
+.input input,
+.input select {
+	width: 100%;
+}
+.form-inputs {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.btn {
+	width: 30%;
+	margin-top: 1rem;
+}

@@ -1,0 +1,30 @@
+<p style="color: green"><%= notice %></p>
+
+<%= simple_form_for(@food) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :title, required: true, label: "שם המנה" %>
+    <%= f.input :guest_name, required: true, label: "שם האורח.ת" %>
+    <%= f.association :category, label: "קטגוריה" %>
+    <%= f.button :submit, "שליחה" %>
+  </div>
+<% end %>
+<div class="foods">
+  <% @categories.each do |category| %>
+  <div class="category">
+    <h1>
+      <%= category.title %>
+    </h1>
+    <% category.foods.each do |food|%>
+    <div class="food">
+      <h2 class="title">
+        <%= food.title %>
+      </h2>
+      <%= food.guest_name %>
+    </div>
+      <% end %>
+  </div>
+  <% end %>
+</div>

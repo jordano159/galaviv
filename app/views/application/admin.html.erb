@@ -1,0 +1,47 @@
+<div>
+    <% @categories.each do |category| %>
+      <h1>
+        <%= category.title %>
+      </h1>
+    <table>
+    <thead>
+    <th>
+      שם המנה
+    </th>
+    <th>
+     שם האורח.ת
+    </th>
+    </thead>
+      <% category.foods.each do |food|%>
+      <tr class="food">
+        <td class="title">
+          <%= food.title %>
+        </td>
+        <td>
+        <%= food.guest_name %>
+        </td>
+      </tr>
+        <% end %>
+    </table>
+    <% end %>
+  </div>
+
+
+  <h1>אורחים</h1>
+
+<div id="guests" data-controller="hello">
+<table id='table'>
+  <thead>
+    <th>שם האורח.ת</th>
+    <th>מגיע.ה?</th>
+    <th>כמה מגיעים?</th>
+    <th>מי מגיע?</th>
+  </thead>
+  <tbody>
+    <% @guests.each do |guest| %>
+      <%= render guest %>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
