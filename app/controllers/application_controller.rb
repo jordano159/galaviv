@@ -16,5 +16,6 @@ class ApplicationController < ActionController::Base
     def admin
         @categories = Category.all
         @guests = Guest.all
+        @category = Category.new
     end
 end
