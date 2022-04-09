@@ -1,8 +1,13 @@
 * {
 	font-family: "Assistant", sans-serif;
 }
+body,
+input,
+select {
+	background: #edf7fc;
+}
 main {
-	width: 60%;
+	width: 90%;
 	margin: 2rem auto;
 }
 a {
@@ -25,7 +30,7 @@ a.active {
 	margin-top: 2rem;
 }
 .category {
-	width: 30%;
+	width: 100%;
 }
 .food {
 	border: 1px solid;
@@ -38,4 +43,19 @@ a.active {
 }
 .food .title {
 	border-bottom: 1px solid;
+}
+.page-title {
+	padding: 1rem;
+}
+@media screen and (min-width: 900px) {
+	main {
+		width: 60%;
+		margin: 2rem auto;
+	}
+	.category {
+		width: 30%;
+	}
+	.page-title {
+		display: none;
+	}
 }

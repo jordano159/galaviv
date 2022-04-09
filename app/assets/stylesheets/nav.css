@@ -1,13 +1,44 @@
+nav {
+	margin-bottom: 6rem;
+}
+nav .menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+}
 nav ul {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	flex-direction: column;
+	/* display: none; */
+	margin-top: -300px;
+	transition: margin-top 500ms, opacity 500ms;
+	opacity: 0;
+	gap: 1rem;
+}
+nav ul.is-active {
+	margin-top: 0;
+	opacity: 100;
 }
 nav ul li a {
-	border-left: 1px solid;
-	padding: 1rem 2rem;
 }
 
-nav ul li:last-child a {
-	border-left: none;
+@media screen and (min-width: 900px) {
+	nav ul {
+		flex-direction: row;
+		opacity: 100;
+		margin-top: 2rem;
+	}
+	nav ul li a {
+		border-left: 1px solid;
+		padding: 1rem 2rem;
+	}
+
+	nav ul li:last-child a {
+		border-left: none;
+	}
+	nav h1 {
+		display: none;
+	}
 }

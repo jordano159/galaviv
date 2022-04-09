@@ -1,6 +1,6 @@
 .input {
 	display: inline-block;
-	width: 30%;
+	width: 100%;
 }
 .input label {
 	width: 100%;
@@ -9,6 +9,14 @@
 .input input,
 .input select {
 	width: 100%;
+	border: 2px solid transparent;
+	border-bottom: 2px solid #33adfc;
+}
+.input input:focus,
+.input select:focus {
+	outline: none;
+	border: 2px solid #33adfc;
+	border-radius: 5px;
 }
 .form-inputs {
 	display: flex;
@@ -19,4 +27,18 @@
 .btn {
 	width: 30%;
 	margin-top: 1rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	background: #33adfc;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+	.input {
+		display: inline-block;
+		width: 30%;
+	}
 }
