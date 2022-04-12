@@ -1,6 +1,6 @@
 class GuestsController < ApplicationController
   before_action :set_guest, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, only: %i[ index ]
+  before_action :authenticate_admin!, only: %i[ index ]
   # GET /guests or /guests.json
   def index
     @guests = Guest.all
