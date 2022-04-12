@@ -1,0 +1,23 @@
+.foods {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
+.category {
+	width: 100%;
+    margin-bottom: 2rem;
+}
+.food {
+	border: 1px solid;
+	border-bottom: none;
+	padding-inline: 1rem;
+	width: 100%;
+}
+.food:last-child {
+	border-bottom: 1px solid;
+}
+.food .title {
+	/* border-bottom: 1px solid; */
+}

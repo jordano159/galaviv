@@ -4,7 +4,7 @@ module ApplicationHelper
         actions = {
             menu: "תפריט",
             location: "מיקום",
-            social_wedding: "חתונה חברתית",
+            social_wedding: "מהי חתונה חברתית?",
             arrival: "אישור הגעה",
         }
         actions[action_name.to_sym]

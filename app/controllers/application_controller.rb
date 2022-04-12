@@ -14,6 +14,7 @@ class ApplicationController < ActionController::Base
         @guest = Guest.new
     end
     def admin
+        redirect_to new_admin_session_path unless admin_signed_in?
         @categories = Category.all
         @guests = Guest.all
         @category = Category.new

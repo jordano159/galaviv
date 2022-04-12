@@ -1,6 +1,9 @@
 * {
 	font-family: "Assistant", sans-serif;
 }
+:root{
+	--primary: #33adfc;
+}
 body,
 input,
 select {
@@ -22,28 +25,7 @@ a.active {
 	font-weight: bold;
 	font-size: 1.1rem;
 }
-.foods {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 2rem;
-}
-.category {
-	width: 100%;
-}
-.food {
-	border: 1px solid;
-	border-bottom: none;
-	padding-inline: 1rem;
-	width: 100%;
-}
-.food:last-child {
-	border-bottom: 1px solid;
-}
-.food .title {
-	border-bottom: 1px solid;
-}
+
 .page-title {
 	padding: 1rem;
 }
@@ -56,6 +38,14 @@ a.active {
 		width: 30%;
 	}
 	.page-title {
-		display: none;
+		/* display: none; */
+		width: 60%;
+		margin: 2rem auto;
+		padding: 0;
 	}
+}
+
+a.link{
+	color: var(--primary);
+	text-decoration: underline;
 }

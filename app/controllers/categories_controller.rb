@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!
   # GET /categories or /categories.json
   def index
     @categories = Category.all
@@ -25,7 +25,7 @@ class CategoriesController < ApplicationController
 
     respond_to do |format|
       if @category.save
-        format.html { redirect_to admin_path, notice: "Category was successfully created." }
+        format.html { redirect_to categories_path, notice: "Category was successfully created." }
         format.json { render :show, status: :created, location: @category }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -65,6 +65,6 @@ class CategoriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def category_params
-      params.require(:category).permit(:title)
+      params.require(:category).permit(:title, :description)
     end
 end
