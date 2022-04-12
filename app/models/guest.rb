@@ -1,6 +1,7 @@
 # require 'csv'    
 class Guest < ApplicationRecord
     enum status: { coming: 0, not_coming: 1 }
+    require "csv"
     def self.to_csv
         attributes = %w{name status amount people}
     
