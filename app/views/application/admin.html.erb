@@ -44,5 +44,5 @@
     <% end %>
   </tbody>
 </table>
-
+<%= link_to( 'Export' ,{ :controller => :guests, :action => :export_csv, format: 'csv'} ) %>
 </div>

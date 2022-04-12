@@ -56,6 +56,15 @@ class GuestsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def export_csv
+    @guests = Guest.all
+     respond_to do |format|
+       format.html
+       format.csv { send_data @guests.to_csv }
+     end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
