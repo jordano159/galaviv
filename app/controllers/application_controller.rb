@@ -13,6 +13,9 @@ class ApplicationController < ActionController::Base
     def arrival
         @guest = Guest.new
     end
+    def volunteer
+        
+    end
     def admin
         redirect_to new_admin_session_path unless admin_signed_in?
         @categories = Category.all

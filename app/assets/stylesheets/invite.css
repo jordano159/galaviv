@@ -1,6 +1,43 @@
-.invite{
-    text-align: center;
-    white-space: pre-wrap;
-    font-size: 1.2em;
-    position: relative;
+
+.invite-img{
+    width: 100%;
+    max-height: 100vh;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-block: 2rem;
+}
+.grid a{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: bold;
+    font-size: 2em;
+    border: 2px solid var(--primary);
+    padding: 1rem;
+}
+.grid a:nth-child(2n-1){
+    flex-direction: row-reverse;
+}
+
+.grid a img{
+    height: 70px;
+
+}
+
+@media screen and (min-width: 900px) {
+	.invite-img{
+        width:auto;
+        margin: 0 auto;
+    }
+    .grid a{
+        width: 40%;
+    }
 }

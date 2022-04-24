@@ -1,12 +1,29 @@
-<div class="invite"><h1>יונתן ונעה מתחתנים</h1>
-<p>
-אנחנו נרגשים להזמין אתכם/ן 
-</p><h2>לחגוג עימנו את יום חתונתנו</h2><p>
-    ביום חמישי 9.6.22
-    בבריכה בקיבוץ הראל
-    18:30 - קבלת פנים  
-    19:30 - חופה
-    נשמח לראותכם/ן!
-    </p>
-<%= image_tag 'clam.webp' %>
+<%= image_tag 'invite.JPG', class: "invite-img" %>
+
+<div class="grid">
+    <%= link_to arrival_path do %>
+       <span>אישור הגעה</span>
+        <%= image_tag 'star.webp' %>
+
+    <% end %>
+    <%= link_to social_wedding_path do %>
+       <span>חתונה חברתית</span>
+        <%= image_tag 'leaf.webp' %>
+
+    <% end %>
+    <%= link_to location_path do %>
+       <span>מיקום</span>
+        <%= image_tag 'wheel.webp' %>
+
+    <% end %>
+    <%= link_to menu_path do %>
+       <span>תפריט</span>
+        <%= image_tag 'leaf2.webp' %>
+
+    <% end %>
+    <%= link_to volunteer_path do %>
+       <span>התנדבות</span>
+        <%= image_tag 'clam.webp' %>
+
+    <% end %>
 </div>

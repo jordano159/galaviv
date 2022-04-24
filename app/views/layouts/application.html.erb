@@ -16,7 +16,7 @@
 
   <body>
     <%= render 'layouts/nav' %>
-    <main>
+    <main class="<%= 'home' if action_name == "home" %>">
       <%= yield %>
     </main>
   </body>

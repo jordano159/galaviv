@@ -7,9 +7,10 @@
 body,
 input,
 select {
-	background: #edf7fc;
+	background: #ffffff;
+	overflow-x: hidden;
 }
-main {
+main:not(.home) {
 	width: 90%;
 	margin: 2rem auto;
 }
@@ -17,9 +18,7 @@ a {
 	color: black;
 	text-decoration: none;
 }
-a:visited {
-	color: black;
-}
+
 
 a.active {
 	font-weight: bold;
@@ -29,6 +28,24 @@ a.active {
 .page-title {
 	padding: 1rem;
 }
+
+
+a.link{
+	color: var(--primary);
+	text-decoration: underline;
+}
+
+.bg-img{
+	position: absolute;
+	opacity: .2;
+	bottom: 00%;
+	left: -40%;
+	z-index: -1;
+}
+.bg-img.opaque{
+	opacity: .7;
+}
+
 @media screen and (min-width: 900px) {
 	main {
 		width: 60%;
@@ -43,9 +60,7 @@ a.active {
 		margin: 2rem auto;
 		padding: 0;
 	}
-}
-
-a.link{
-	color: var(--primary);
-	text-decoration: underline;
+	.bg-img{
+		left: 0;
+	}
 }

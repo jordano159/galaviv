@@ -6,6 +6,8 @@ module ApplicationHelper
             location: "מיקום",
             social_wedding: "מהי חתונה חברתית?",
             arrival: "אישור הגעה",
+            volunteer: "התנדבות",
+
         }
         actions[action_name.to_sym]
     end
