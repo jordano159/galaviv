@@ -11,8 +11,11 @@ select {
 	overflow-x: hidden;
 }
 main:not(.home) {
-	width: 90%;
-	margin: 2rem auto;
+	/* width: 90%; */
+	/* margin: 0 auto; */
+	overflow-x: hidden;
+	padding-inline: 1rem;
+	position: relative;
 }
 a {
 	color: black;
@@ -37,18 +40,19 @@ a.link{
 .bg-img{
 	position: absolute;
 	opacity: .2;
-	bottom: 00%;
+	top: 20%;
 	left: -40%;
 	z-index: -1;
 }
-.bg-img.opaque{
-	opacity: .7;
+.bg-img.relative{
+	position: relative;
 }
 
 @media screen and (min-width: 900px) {
 	main:not(.home) {
 		width: 50%;
 		margin: 2rem auto;
+		position: unset;
 	}
 	.category {
 		width: 30%;
@@ -57,9 +61,13 @@ a.link{
 		/* display: none; */
 		width: 50%;
 		margin: 2rem auto;
-		padding: 0;
+		padding: 1rem;
 	}
 	.bg-img{
 		left: 0;
 	}
+	.bg-img.relative{
+		position: absolute;
+	}
+	
 }
