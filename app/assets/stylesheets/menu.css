@@ -21,3 +21,9 @@
 .food .title {
 	/* border-bottom: 1px solid; */
 }
+
+@media screen and (min-width: 900px) {
+	.category{
+		width: 30%;
+	}
+}

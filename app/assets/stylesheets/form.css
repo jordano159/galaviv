@@ -41,6 +41,11 @@
 @media screen and (min-width: 900px) {
 	.input {
 		display: inline-block;
-		width: 30%;
+		width: 50%;
 	}
+
+	.form-inputs {
+		align-items: flex-start;
+	}
+
 }

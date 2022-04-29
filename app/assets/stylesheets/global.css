@@ -46,8 +46,8 @@ a.link{
 }
 
 @media screen and (min-width: 900px) {
-	main {
-		width: 60%;
+	main:not(.home) {
+		width: 50%;
 		margin: 2rem auto;
 	}
 	.category {
@@ -55,7 +55,7 @@ a.link{
 	}
 	.page-title {
 		/* display: none; */
-		width: 60%;
+		width: 50%;
 		margin: 2rem auto;
 		padding: 0;
 	}
