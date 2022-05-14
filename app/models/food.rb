@@ -8,7 +8,7 @@ class Food < ApplicationRecord
         CSV.generate(headers: true) do |csv|
           csv << ["קטגוריה","מנה","אורח"]
     
-          all.each do |food|
+          all.order(:category_id).each do |food|
             csv << attributes.map do |attr|
                 if attr == "category"
                     food.send(attr).title
