@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get "volunteer", to: "application#volunteer"
   get "admin", to: "application#admin"
   get '/export_csv', to: 'guests#export_csv'
+  get '/export_csv_foods', to: 'foods#export_csv'
 
 end

@@ -57,6 +57,14 @@ class FoodsController < ApplicationController
     end
   end
 
+  def export_csv
+    @foods = Food.all
+     respond_to do |format|
+       format.html
+       format.csv { send_data @foods.to_csv }
+     end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_food
