@@ -15,13 +15,16 @@
      שם האורח.ת
     </th>
     </thead>
-      <% category.foods.each do |food|%>
+      <% category.foods.order(:created_at).each do |food|%>
       <tr class="food">
         <td class="title">
           <%= food.title %>
         </td>
         <td>
         <%= food.guest_name %>
+        </td>
+        <td>
+        <%= link_to "עריכה", edit_food_path(food) %>
         </td>
       </tr>
         <% end %>
@@ -41,7 +44,7 @@
     <th>מי מגיע?</th>
   </thead>
   <tbody>
-    <% @guests.each do |guest| %>
+    <% @guests.order(:created_at).each do |guest| %>
       <%= render guest %>
     <% end %>
   </tbody>
