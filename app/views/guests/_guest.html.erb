@@ -15,6 +15,13 @@
    <td>
     <%= guest.people %>
   </td>
+   <td>
+    <% if guest.is_sleeping %>
+      כן
+    <% else %>
+      לא
+    <% end %>
+  </td>
   <td>
     <%= link_to "עריכה", edit_guest_path(guest) %>
   </td>

@@ -5,10 +5,11 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs guest-inputs">
-    <%= f.input :name, label: "שם מלא", required: true%>
+    <%= f.input :name, label: "שם מלא", required: true %>
     <%# f.input :status, collection: [["מגיע.ה", "coming"], ["לא מגיע.ה", "not_coming"]], label: "מגיע.ה?", required: true %>
     <%= f.input :amount, label: "כמה תגיעו?", required: true %>
     <%= f.input :people, label: "שמות האורחים/ות שיגיעו איתכם/ן?" %>
+    <%= f.input :is_sleeping, label: "האם תישארו לישון?" %>
     <%= f.button :submit, "שליחה" %>
     
   </div>
