@@ -1,29 +1,18 @@
-<%= image_tag 'invite.JPG', class: "invite-img" %>
+<%= image_tag 'invitation.webp', class: "invite-img" %>
 
+<p class= "invitation-description">אנחנו מתרגשים להזמינכם/ן לחתונה שלנו! <br>
+האירוע מתקיים בשטח פתוח, זכרו להביא נעליים נוחות!</p>
 <div class="grid">
     <%= link_to arrival_path do %>
        <span>אישור הגעה</span>
         <%= image_tag 'star.webp' %>
-
     <% end %>
     <%= link_to social_wedding_path do %>
        <span>חתונה חברתית</span>
         <%= image_tag 'leaf.webp' %>
-
     <% end %>
     <%= link_to location_path do %>
        <span>מיקום</span>
         <%= image_tag 'wheel.webp' %>
-
-    <% end %>
-    <%= link_to menu_path do %>
-       <span>תפריט</span>
-        <%= image_tag 'leaf2.webp' %>
-
-    <% end %>
-    <%= link_to volunteer_path do %>
-       <span>התנדבות</span>
-        <%= image_tag 'clam.webp' %>
-
     <% end %>
 </div>
