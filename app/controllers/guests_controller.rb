@@ -25,7 +25,7 @@ class GuestsController < ApplicationController
 
     respond_to do |format|
       if @guest.save
-        format.html { redirect_to arrival_path, notice: "תודה רבה! נרשמת בהצלחה" }
+        format.html { redirect_to arrival_path, notice: "תודה רבה! נשמח לראותכם/ן! גל ואביב" }
         format.json { render :show, status: :created, location: @guest }
       else
         format.html { render :new, status: :unprocessable_entity }

@@ -18,3 +18,13 @@ p.invitation-description{
     text-align: center;
     font-size: 2em;
 }
+
+p.guest-notice{
+    color: #bb7598;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.guest-inputs{
+    font-size: large;
+}
