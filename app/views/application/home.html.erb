@@ -1,3 +1,5 @@
+<% session[:is_sleeping] = "true" if params[:sleep] == "yes" && session[:is_sleeping].blank? %>
+<%= session[:is_sleeping] %>
 <%= image_tag 'invitation.webp', class: "invite-img" %>
 
 <p class= "invitation-description">אנחנו מתרגשים להזמינכם/ן לחתונה שלנו! <br>
