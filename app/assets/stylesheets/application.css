@@ -19,6 +19,21 @@ p.invitation-description{
     font-size: 2em;
 }
 
+p.sleeping-description{
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 600px) {
+    p.sleeping-description {
+        width: 80%;
+    }
+}
+
 p.guest-notice{
     color: #bb7598;
     font-size: 1.5rem;
