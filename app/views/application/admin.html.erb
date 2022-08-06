@@ -1,39 +1,4 @@
-
-  <div>
-  </table>
-<%= link_to( 'ייצוא תפריט' ,{ :controller => :foods, :action => :export_csv, format: 'csv'} ) %>
-    <% @categories.each do |category| %>
-      <h1>
-        <%= category.title %>
-      </h1>
-    <table>
-    <thead>
-    <th>
-      שם המנה
-    </th>
-    <th>
-     שם האורח.ת
-    </th>
-    </thead>
-      <% category.foods.order(:created_at).each do |food|%>
-      <tr class="food">
-        <td class="title">
-          <%= food.title %>
-        </td>
-        <td>
-        <%= food.guest_name %>
-        </td>
-        <td>
-        <%= link_to "עריכה", edit_food_path(food) %>
-        </td>
-      </tr>
-        <% end %>
-    </table>
-    <% end %>
-  </div>
-
-
-  <h1>אורחים</h1>
+<h1>אורחים</h1>
 
 <div id="guests" data-controller="hello">
 <table id='table'>
@@ -50,5 +15,5 @@
     <% end %>
   </tbody>
 </table>
-<%= link_to( 'Export' ,{ :controller => :guests, :action => :export_csv, format: 'csv'} ) %>
+<%= link_to( 'ייצוא אורחים' ,{ :controller => :guests, :action => :export_csv, format: 'csv'}, class: "link" ) %>
 </div>
